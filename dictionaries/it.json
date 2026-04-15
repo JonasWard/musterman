@@ -1,0 +1,44 @@
+{
+  "pages": {
+    "home": "Home",
+    "about": "Chi sono"
+  },
+  "home": {
+    "meta": {
+      "title": "Musterman — L'uomo dei motivi",
+      "description": "Portfolio di Musterman, un designer di motivi con sede in Svizzera."
+    },
+    "hero": {
+      "eyebrow": "Designer di motivi",
+      "heading": "Musterman",
+      "tagline": "L'uomo dei motivi",
+      "cta": "Vedi i lavori"
+    },
+    "work": {
+      "label": "Lavori selezionati",
+      "item1": {
+        "title": "Motivi tessili",
+        "desc": "Strutture intrecciate per moda e interni."
+      },
+      "item2": {
+        "title": "Design di superficie",
+        "desc": "Motivi ripetitivi audaci per stampa e media digitali."
+      },
+      "item3": {
+        "title": "Motivi di brand",
+        "desc": "Motivi distintivi che definiscono i sistemi di identità."
+      }
+    },
+    "contact": {
+      "heading": "Creiamo qualcosa insieme.",
+      "cta": "Contattami"
+    }
+  },
+  "about": {
+    "meta": {
+      "description": "Chi è Musterman, designer di motivi con sede in Svizzera."
+    },
+    "heading": "Chi è Musterman",
+    "subheading": "Con sede in Svizzera, creo motivi che uniscono tradizione e design contemporaneo. Trovami su <a href=\"https://musterman.ch\" target=\"_blank\">musterman.ch</a>."
+  }
+}

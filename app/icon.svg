@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#18181b" />
+  <defs>
+    <pattern
+      id="logo-stripe"
+      width="6"
+      height="6"
+      patternUnits="userSpaceOnUse"
+      patternTransform="rotate(45)"
+    >
+      <line
+        x1="0"
+        y1="0"
+        x2="0"
+        y2="6"
+        stroke="rgba(255,255,255,0.14)"
+        stroke-width="2.5"
+      />
+    </pattern>
+  </defs>
+  <rect width="32" height="32" fill="url(#logo-stripe)" />
+  <path
+    fill="#f8f5f0"
+    d="M6 27 L6 5 L11 5 L16 14 L21 5 L26 5 L26 27 L21 27 L21 19 L16 23 L11 19 L11 27 Z"
+  />
+</svg>

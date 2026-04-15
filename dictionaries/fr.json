@@ -1,0 +1,44 @@
+{
+  "pages": {
+    "home": "Accueil",
+    "about": "À propos"
+  },
+  "home": {
+    "meta": {
+      "title": "Musterman — L'homme aux motifs",
+      "description": "Portfolio de Musterman, un créateur de motifs basé en Suisse."
+    },
+    "hero": {
+      "eyebrow": "Créateur de motifs",
+      "heading": "Musterman",
+      "tagline": "L'homme aux motifs",
+      "cta": "Voir les créations"
+    },
+    "work": {
+      "label": "Travaux sélectionnés",
+      "item1": {
+        "title": "Motifs textiles",
+        "desc": "Structures tissées pour la mode et les intérieurs."
+      },
+      "item2": {
+        "title": "Design de surface",
+        "desc": "Motifs répétitifs pour l'impression et le numérique."
+      },
+      "item3": {
+        "title": "Motifs de marque",
+        "desc": "Motifs signatures qui définissent les systèmes d'identité."
+      }
+    },
+    "contact": {
+      "heading": "Créons quelque chose ensemble.",
+      "cta": "Prendre contact"
+    }
+  },
+  "about": {
+    "meta": {
+      "description": "À propos de Musterman, créateur de motifs basé en Suisse."
+    },
+    "heading": "À propos de Musterman",
+    "subheading": "Basé en Suisse, je crée des motifs qui allient tradition et design contemporain. Retrouvez-moi sur <a href=\"https://musterman.ch\" target=\"_blank\">musterman.ch</a>."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "pages": {
+    "home": "Startseite",
+    "about": "Über mich"
+  },
+  "home": {
+    "meta": {
+      "title": "Musterman — Der Muster Man",
+      "description": "Portfolio von Musterman, einem kreativen Musterdesigner aus der Schweiz."
+    },
+    "hero": {
+      "eyebrow": "Musterdesigner",
+      "heading": "Musterman",
+      "tagline": "Der Muster Man",
+      "cta": "Arbeiten ansehen"
+    },
+    "work": {
+      "label": "Ausgewählte Arbeiten",
+      "item1": {
+        "title": "Textilmuster",
+        "desc": "Gewebte Strukturen für Mode und Innenräume."
+      },
+      "item2": {
+        "title": "Oberflächendesign",
+        "desc": "Einprägsame Wiederholungsmotive für Druck und digitale Medien."
+      },
+      "item3": {
+        "title": "Markenmuster",
+        "desc": "Charakteristische Muster für Identitätssysteme."
+      }
+    },
+    "contact": {
+      "heading": "Lass uns gemeinsam etwas schaffen.",
+      "cta": "Kontakt aufnehmen"
+    }
+  },
+  "about": {
+    "meta": {
+      "description": "Über Musterman, einen kreativen Musterdesigner aus der Schweiz."
+    },
+    "heading": "Über Musterman",
+    "subheading": "Aus der Schweiz heraus schaffe ich Muster, die Tradition und zeitgenössisches Design verbinden. Besuche mich auf <a href=\"https://musterman.ch\" target=\"_blank\">musterman.ch</a>."
+  }
+}
