@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="1024" height="1024">
+  <defs>
+    <mask
+      id="logo-mask"
+      maskUnits="userSpaceOnUse"
+      x="0"
+      y="0"
+      width="32"
+      height="32"
+    >
+      <rect width="32" height="32" fill="black" />
+      <g transform="translate(-6.627416998 32) rotate(-45)">
+        <path
+          fill="white"
+          fill-rule="evenodd"
+          d="M0,0 h32 v32 h-32 z
+          M13,6 h6 v7 h7 v6 h-7 v7 h-6 v-7 h-7 v-6 h7 z"
+        />
+      </g>
+    </mask>
+    <pattern
+      id="stripeTile"
+      patternUnits="userSpaceOnUse"
+      patternContentUnits="userSpaceOnUse"
+      width="52"
+      height="4"
+    >
+      <rect width="50" height="2" stroke="white" fill="transparent" stroke-width="1" />
+      <rect width="50" height="2" fill="black" transform="translate(0, 2)" />
+    </pattern>
+    <pattern
+      id="tileTile"
+      patternUnits="userSpaceOnUse"
+      patternContentUnits="userSpaceOnUse"
+      width="2"
+      height="2"
+    >
+      <rect width="1" height="1" fill="red" />
+      <rect width="1" height="1" fill="red" transform="translate(1, 1)" />
+    </pattern>
+  </defs>
+  <filter
+    id="displacementFilter"
+  >
+    <feTurbulence
+      type="fractalNoise"
+      seed="7"
+      result="bgNoise"
+    >
+      <animate
+        attributeName="baseFrequency"
+        dur="28s"
+        values="0.24;0.32;0.28"
+        repeatCount="indefinite"
+      />
+    </feTurbulence>
+    <feDisplacementMap
+      in2="bgNoiseSoft"
+      in="SourceGraphic"
+      scale="3"
+      xChannelSelector="R"
+      yChannelSelector="G"
+      result="bgDisplaced"
+    />
+  </filter>
+  <rect width="52" height="52" transform="translate(-10, -10)" fill="url(#stripeTile)" filter="url(#displacementFilter)" />
+  <filter
+    id="displacementFilter2"
+  >
+    <feTurbulence
+      type="fractalNoise"
+      seed="11"
+      result="logoNoise"
+    >
+      <animate
+        attributeName="baseFrequency"
+        dur="20s"
+        values="0.45;0.58;0.5"
+        repeatCount="indefinite"
+      />
+    </feTurbulence>
+    <feGaussianBlur in="logoNoise" stdDeviation="0.45" result="logoNoiseSoft" />
+    <feDisplacementMap
+      in2="logoNoiseSoft"
+      in="SourceGraphic"
+      scale="4"
+      xChannelSelector="R"
+      yChannelSelector="G"
+      result="logoDisplaced"
+    />
+    <feGaussianBlur in="logoDisplaced" stdDeviation="0.02" />
+  </filter>
+  <g filter="url(#displacementFilter2)" >
+    <g mask="url(#logo-mask)" >
+      <rect width="32" height="32" fill="#ff9999" />
+      <g transform="translate(-6.627416998 32) rotate(-45)">
+      <rect width="32" height="32" fill="url(#tileTile)" />
+    </g>
+    </g>
+  </g>
+</svg>
