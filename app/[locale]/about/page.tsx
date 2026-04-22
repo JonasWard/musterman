@@ -3,7 +3,8 @@ import { Metadata } from "next";
 import { Props } from "../layout";
 import Main from "../main";
 
-export function generateMetadata({ params: { locale } }: Props): Metadata {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
   const t = getTranslations(locale);
   return {
     title: `${t.pages.about} — ${t.home.meta.title}`,
@@ -11,7 +12,8 @@ export function generateMetadata({ params: { locale } }: Props): Metadata {
   };
 }
 
-export default function About({ params: { locale } }: Readonly<Props>) {
+export default async function About({ params }: Readonly<Props>) {
+  const { locale } = await params;
   const t = getTranslations(locale);
   return (
     <Main locale={locale} page="about">

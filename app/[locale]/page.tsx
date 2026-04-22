@@ -4,7 +4,8 @@ import { getTranslations } from "@/utilities/l10n";
 import { Metadata } from "next";
 import { Props } from "./layout";
 
-export function generateMetadata({ params: { locale } }: Props): Metadata {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
   const t = getTranslations(locale);
   return {
     title: t.home.meta.title,
@@ -86,7 +87,8 @@ function PatternPreview({ index }: { index: number }) {
   return <DotsPattern />;
 }
 
-export default function Home({ params: { locale } }: Readonly<Props>) {
+export default async function Home({ params }: Readonly<Props>) {
+  const { locale } = await params;
   const t = getTranslations(locale);
 
   return (

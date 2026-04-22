@@ -2,6 +2,8 @@ import { defaultLocale, locales, pages } from "@/config";
 import { getUrl } from "@/utilities/l10n";
 import { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return pages.map((p) => ({
     url: getUrl(defaultLocale, p),
